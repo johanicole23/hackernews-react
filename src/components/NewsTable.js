@@ -18,7 +18,7 @@ const NewsTable = ({ entries }) => {
           {entries.map((entry) => (
             <TableRow key={entry.entryId}>
               <TableCell sx={personalizedStyles.tableEntries} component="th" scope="row">
-              {entry.entryId}.&nbsp;{entry.entryTitle}
+              <strong>{entry.entryId}.</strong>&nbsp;{entry.entryTitle}
               </TableCell>
               <TableCell sx={personalizedStyles.tableEntries} align="right">{entry.entryPoints}</TableCell>
               <TableCell sx={personalizedStyles.tableEntries} align="right">{entry.entryComments}</TableCell>
