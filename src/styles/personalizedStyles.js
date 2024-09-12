@@ -11,8 +11,7 @@ const personalizedStyles = {
         color: myTheme.palette.common.customDark,
         textDecoration: 'none',
         '& span': {
-          letterSpacing: '.25rem', 
-          fontFamily: 'Open Sans',
+          letterSpacing: '.3rem', 
           fontWeight: 650,
         },
     },
@@ -61,5 +60,16 @@ const personalizedStyles = {
         },
         
     },
+    tableTitle:{
+        fontFamily: "Cairo",
+        fontSize: "1.2rem",
+        fontWeight: '650',
+        color: myTheme.palette.common.customDark,
+    },
+    tableEntries:{
+        fontFamily: "Cairo",
+        fontSize: "1rem",
+        color: myTheme.palette.common.customDarker,
+    }
 }
 export default personalizedStyles;

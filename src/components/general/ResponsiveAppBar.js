@@ -1,11 +1,5 @@
 import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import { ThemeProvider} from '@mui/material/styles';
-
-import Container from '@mui/material/Container';
+import { AppBar, Box, Container, Toolbar, Typography, ThemeProvider } from '@mui/material';
 
 import stack from '../../assets/stack.png'
 import { theme } from '../../styles/myGeneralTheme';
@@ -20,11 +14,11 @@ function ResponsiveAppBar() {
             <AppBar position="static">
                 <Container maxWidth="xl">
                     <Toolbar disableGutters>
-                        <Box sx={{ marginRight:'1rem' }}>
+                        <Box sx={{ marginRight: '1rem' }}>
                             <img
-                                src={stack} 
-                                alt="Stack Logo" 
-                                style={{ width: 40, height: 40, borderRadius: '50%' }} 
+                                src={stack}
+                                alt="Stack Logo"
+                                style={{ width: 40, height: 40, borderRadius: '50%' }}
                             />
 
                         </Box>

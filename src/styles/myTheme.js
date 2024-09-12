@@ -7,6 +7,7 @@ const myTheme = createTheme({
       customPrimary: '#4494D0',
       customSecondary: '#B0D240',
       customAuxiliary: '#F07845',
+      customDarker: '#2a3941',
       
     },
   },
