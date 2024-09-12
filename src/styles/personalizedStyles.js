@@ -25,6 +25,31 @@ const personalizedStyles = {
             margin: '2rem 6%',
         },
     },
+    introductionBox:{
+        display: 'flex',
+        justifyContent : 'center',
+        alignItems : 'center',
+        margin: '2rem 10%',
+        flexDirection: 'column', 
+        '@media screen and (max-width: 599px)': {
+            margin: '2rem 6%',
+        },
+    },
+    introductionTitle:{
+        fontFamily: "Oswald",
+        fontSize: "2.5rem",
+        color: myTheme.palette.common.customDarker,
+    },
+    introductionDescription:{
+        fontFamily: "Cairo",
+        fontSize: "1.5rem",
+        color: myTheme.palette.common.customDarker,
+    },
+    introductionList:{
+        fontFamily: "Cairo",
+        fontSize: "1.2rem",
+        color: myTheme.palette.common.customDarker,
+    },
     buttonFilter1: {
         fontFamily: "Cairo",
         textTransform: 'none',
@@ -68,7 +93,7 @@ const personalizedStyles = {
     },
     tableEntries:{
         fontFamily: "Cairo",
-        fontSize: "1rem",
+        fontSize: "1.1rem",
         color: myTheme.palette.common.customDarker,
     }
 }

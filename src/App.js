@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { fetchEntries } from './services/apiService';
-import { Box} from '@mui/material';
+import { Box } from '@mui/material';
 import NewsTable from './components/NewsTable';
 import Filters from './components/Filters';
 import Loader from './components/Loader';
+import Introduction from './components/Introduction';
 import ResponsiveAppBar from './components/general/ResponsiveAppBar';
 import personalizedStyles from './styles/personalizedStyles';
 
@@ -39,9 +40,8 @@ function App() {
     <div>
       {loading ? <Loader /> : (
         <>
-          {/* <Filters onFilter={handleFilter} />
-          <NewsTable entries={filteredEntries} /> */}
           <ResponsiveAppBar />
+          <Introduction />
           <Box sx={personalizedStyles.appGeneralBox}>
             <Filters onFilter={handleFilter} />
             <NewsTable entries={filteredEntries} />
